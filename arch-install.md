@@ -216,3 +216,8 @@ permit :wheel
 useradd -m -G wheel -s /bin/bash ваш_юзернейм
 passwd ваш_юзернейм
 ```
+## Устанавливаем нужные компаненты для установки програм
+doas pacman -S flatpak base-devel
+doas pacman -Rdd sudo
+
+*Все, систему можно использовать полноценно!*
