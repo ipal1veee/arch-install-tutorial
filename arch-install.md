@@ -140,6 +140,10 @@ reboot
 
 *Система установлена и готова к загрузке!*
 # Скачивания окружения + драйверов
+## Установка шрифта для русского языка
+```bash
+set-font cyr-sun16
+```
 ## Проверка интернета
 ```bash
 ping -c 3 archlinux.org
@@ -169,6 +173,12 @@ Name=имя_интерфейса_тут
 DHCP=ipv4
 ```
 
+## Русские зеркала
+```bash
+pacman -S reflector
+reflector --country 'Russia' --save /etc/pacman.d/mirrorlist
+pacman -Sy
+```
 
 ## Звук
 ```bash
