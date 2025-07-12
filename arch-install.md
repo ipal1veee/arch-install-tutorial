@@ -149,6 +149,12 @@ setfont cyr-sun16
 ping -c 3 archlinux.org
 ```
 # Еcли нету интернета
+## Если wifi
+```bash
+nmcli device wifi list
+nmcli device wifi connect *Название сети* --ask
+*пароль от сети потом спросит*
+```
 ```bash
 systemctl enable systemd-networkd
 systemctl start systemd-networkd
